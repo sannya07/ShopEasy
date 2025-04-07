@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.navbar{
+  font-size: 17px;
+  line-height: 26px;
+  box-shadow: 0 8px 6px -6px gray; 
+  --webkit-box-shadow:0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+  /* text-transform: uppercase; */
+}
+
+.nav{
+  font-weight: 300  !important;
+}
