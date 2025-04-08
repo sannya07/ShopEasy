@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout';
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout title={'Contact Us'}>
       <div className="contact-container bg-black text-white min-h-screen py-5">
         <div className="container py-5">
           {/* Page Header with Gradient Text */}

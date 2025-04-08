@@ -6,7 +6,7 @@ const PageNotFound = () => {
   const errorId = `404-${Math.floor(Math.random() * 1000000)}`;
 
   return (
-    <Layout>
+    <Layout title={'404-Not Found'}>
       <div className="page-not-found-container bg-black text-white min-vh-100 d-flex align-items-center justify-content-center px-4 py-5">
         <div className="container text-center">
           {/* Gradient 404 */}
