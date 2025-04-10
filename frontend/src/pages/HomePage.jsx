@@ -309,11 +309,11 @@ const HomePage = () => {
           {/* Newsletter */}
           <div className="row my-5 py-5">
             <div className="col-lg-10 mx-auto">
-              <div className="newsletter-container p-5 rounded-lg shadow-lg text-center" 
+              <div className="newsletter-container p-5 rounded-lg shadow-lg text-center rounded" 
                    style={{
                      backgroundImage: "linear-gradient(to right, rgba(37, 99, 235, 0.7), rgba(147, 51, 234, 0.7))",
                    }}>
-                <h2 className="display-5 fw-light mb-3 rounded">Join Our Newsletter</h2>
+                <h2 className="display-5 fw-light mb-3">Join Our Newsletter</h2>
                 <p className="lead mb-4">Get exclusive deals, new product alerts, and 10% off your first order</p>
                 <div className="row justify-content-center">
                   <div className="col-md-8">
