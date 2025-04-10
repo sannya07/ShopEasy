@@ -193,7 +193,7 @@ const HomePage = () => {
           </div>
           
           {/* Testimonials */}
-          <div className="row mb-5 pt-5">
+          <div className="row mb-5 pt-5 ">
             <div className="col-lg-12 text-center mb-4">
               <h2 className="display-5 fw-light">What Our Customers Say</h2>
               <p className="text-gray-400">Join thousands of satisfied shoppers</p>
@@ -313,7 +313,7 @@ const HomePage = () => {
                    style={{
                      backgroundImage: "linear-gradient(to right, rgba(37, 99, 235, 0.7), rgba(147, 51, 234, 0.7))",
                    }}>
-                <h2 className="display-5 fw-light mb-3">Join Our Newsletter</h2>
+                <h2 className="display-5 fw-light mb-3 rounded">Join Our Newsletter</h2>
                 <p className="lead mb-4">Get exclusive deals, new product alerts, and 10% off your first order</p>
                 <div className="row justify-content-center">
                   <div className="col-md-8">
