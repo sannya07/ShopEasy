@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="footer bg-black text-light py-4 mt-auto">
+    <footer className="footer bg-black text-light py-4 mt-auto border-top border-white">
       <div className="container text-center">
         {/* Brand */}
         <h5 className="fw-bold text-gradient mb-2">ShopEasy</h5>
