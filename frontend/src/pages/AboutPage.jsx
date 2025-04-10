@@ -4,176 +4,396 @@ import Layout from '../components/Layout/Layout';
 const About = () => {
   return (
     <Layout title={'About Us'}>
-      <div className="about-page-container bg-black text-light py-5">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
+      <div className="about-container bg-black text-white min-h-screen py-5">
+        <div className="container py-5">
+          {/* Page Header with Gradient Text */}
+          <div className="row mb-5">
+            <div className="col-lg-12 text-center">
+              <h1 className="display-3 fw-bold mb-3 text-gradient"
+                  style={{
+                    backgroundImage: "linear-gradient(45deg, #8b5cf6, #3b82f6, #10b981)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent"
+                  }}>
+                Our Story
+              </h1>
+              <p className="lead text-gray-400 mx-auto" style={{maxWidth: "700px"}}>
+                ShopEasy is more than just a store - we're on a mission to make shopping 
+                accessible, enjoyable, and hassle-free for everyone.
+              </p>
+            </div>
+          </div>
 
-              {/* Header with improved styling */}
-              <div className="text-center mb-5">
-                <h1 className="display-3 fw-bold text-danger mb-3">About Us</h1>
-                <div className="header-underline bg-danger mx-auto mb-4"></div>
-                <p className="lead text-secondary fw-light">
-                  Learn more about our journey, mission, and the team that makes it all possible.
+          {/* Our Journey Section */}
+          <div className="row mb-5">
+            <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100" style={{backgroundColor: "#1a1a1a"}}>
+                <h2 className="mb-4 fs-2 fw-light">Our Journey</h2>
+                <p className="text-gray-400">
+                  Founded in 2015, ShopEasy began with a simple idea: shopping should be easy. 
+                  What started as a small online store operating out of a garage has grown into 
+                  a global retail platform serving millions of customers worldwide.
+                </p>
+                <p className="text-gray-400">
+                  Our founder, Jamie Chen, experienced firsthand the frustrations of complicated 
+                  shopping experiences and inconsistent customer service. This inspired the creation 
+                  of ShopEasy - a platform where quality, convenience, and customer satisfaction 
+                  would never be compromised.
+                </p>
+                <p className="text-gray-400">
+                  Today, we offer thousands of products across dozens of categories, but our 
+                  core mission remains unchanged: to make shopping easy, accessible, and enjoyable for everyone.
                 </p>
               </div>
-
-              {/* Mission and Vision with enhanced styling */}
-              <div className="card bg-dark border-danger border-start border-4 shadow-lg mb-5 hover-card">
-                <div className="card-body p-5">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="icon-box bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3">
-                      <i className="bi bi-bullseye fs-4"></i>
-                    </div>
-                    <h2 className="card-title text-danger m-0">Our Mission</h2>
+            </div>
+            
+            <div className="col-lg-6">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100" style={{backgroundColor: "#1a1a1a"}}>
+                <h2 className="mb-4 fs-2 fw-light">Why Choose ShopEasy?</h2>
+                
+                {/* Feature boxes with gradient icons */}
+                <div className="mb-4 d-flex align-items-center">
+                  <div className="feature-icon me-3 p-3 rounded-circle bg-gradient-to-r" 
+                       style={{
+                         backgroundImage: "linear-gradient(to right, #2563eb, #9333ea)",
+                         width: "50px",
+                         height: "50px",
+                         display: "flex",
+                         alignItems: "center",
+                         justifyContent: "center"
+                       }}>
+                    <i className="bi bi-star text-white fs-5"></i>
                   </div>
-                  <p className="text-light-emphasis fs-5">
-                    At <strong className="text-danger">Your E-Commerce Store</strong>, our mission is to deliver quality products at affordable prices with unmatched customer satisfaction. 
-                    We believe shopping should be easy, accessible, and joyful for everyone.
-                  </p>
+                  <div>
+                    <h5 className="fw-semibold mb-1">Quality Guarantee</h5>
+                    <p className="text-gray-400 mb-0">All products undergo rigorous quality testing before they reach you.</p>
+                  </div>
+                </div>
+                
+                <div className="mb-4 d-flex align-items-center">
+                  <div className="feature-icon me-3 p-3 rounded-circle bg-gradient-to-r" 
+                       style={{
+                         backgroundImage: "linear-gradient(to right, #2563eb, #9333ea)",
+                         width: "50px",
+                         height: "50px",
+                         display: "flex",
+                         alignItems: "center",
+                         justifyContent: "center"
+                       }}>
+                    <i className="bi bi-truck text-white fs-5"></i>
+                  </div>
+                  <div>
+                    <h5 className="fw-semibold mb-1">Fast Delivery</h5>
+                    <p className="text-gray-400 mb-0">Enjoy quick shipping with our optimized logistics network.</p>
+                  </div>
+                </div>
+                
+                <div className="mb-4 d-flex align-items-center">
+                  <div className="feature-icon me-3 p-3 rounded-circle bg-gradient-to-r" 
+                       style={{
+                         backgroundImage: "linear-gradient(to right, #2563eb, #9333ea)",
+                         width: "50px",
+                         height: "50px",
+                         display: "flex",
+                         alignItems: "center",
+                         justifyContent: "center"
+                       }}>
+                    <i className="bi bi-shield-check text-white fs-5"></i>
+                  </div>
+                  <div>
+                    <h5 className="fw-semibold mb-1">Secure Shopping</h5>
+                    <p className="text-gray-400 mb-0">Your data and transactions are protected with enterprise-grade security.</p>
+                  </div>
+                </div>
+                
+                <div className="mb-4 d-flex align-items-center">
+                  <div className="feature-icon me-3 p-3 rounded-circle bg-gradient-to-r" 
+                       style={{
+                         backgroundImage: "linear-gradient(to right, #2563eb, #9333ea)",
+                         width: "50px",
+                         height: "50px",
+                         display: "flex",
+                         alignItems: "center",
+                         justifyContent: "center"
+                       }}>
+                    <i className="bi bi-headset text-white fs-5"></i>
+                  </div>
+                  <div>
+                    <h5 className="fw-semibold mb-1">24/7 Support</h5>
+                    <p className="text-gray-400 mb-0">Our customer service team is always ready to assist you.</p>
+                  </div>
                 </div>
               </div>
-
-              <div className="card bg-dark border-danger border-start border-4 shadow-lg mb-5 hover-card">
-                <div className="card-body p-5">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="icon-box bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3">
-                      <i className="bi bi-eye fs-4"></i>
-                    </div>
-                    <h2 className="card-title text-danger m-0">Our Vision</h2>
+            </div>
+          </div>
+          
+          {/* Our Values Section */}
+          <div className="row mb-5">
+            <div className="col-lg-12 text-center mb-4">
+              <h2 className="fs-1 fw-light">Our Values</h2>
+              <p className="text-gray-400">The principles that guide everything we do</p>
+            </div>
+            
+            <div className="col-lg-4 mb-4">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
+                <div className="value-icon mb-3 mx-auto p-3 rounded-circle bg-gradient-to-r" 
+                     style={{
+                       backgroundImage: "linear-gradient(to right, #8b5cf6, #3b82f6)",
+                       width: "70px",
+                       height: "70px",
+                       display: "flex",
+                       alignItems: "center",
+                       justifyContent: "center"
+                     }}>
+                  <i className="bi bi-people text-white fs-3"></i>
+                </div>
+                <h3 className="fw-semibold mb-2">Customer First</h3>
+                <p className="text-gray-400">
+                  Every decision we make starts with the question: "How does this benefit our customers?"
+                  Your satisfaction is our top priority.
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-lg-4 mb-4">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
+                <div className="value-icon mb-3 mx-auto p-3 rounded-circle bg-gradient-to-r" 
+                     style={{
+                       backgroundImage: "linear-gradient(to right, #3b82f6, #10b981)",
+                       width: "70px",
+                       height: "70px",
+                       display: "flex",
+                       alignItems: "center",
+                       justifyContent: "center"
+                     }}>
+                  <i className="bi bi-recycle text-white fs-3"></i>
+                </div>
+                <h3 className="fw-semibold mb-2">Sustainability</h3>
+                <p className="text-gray-400">
+                  We're committed to reducing our environmental footprint through eco-friendly 
+                  packaging, carbon offset shipping, and sustainable product sourcing.
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-lg-4 mb-4">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
+                <div className="value-icon mb-3 mx-auto p-3 rounded-circle bg-gradient-to-r" 
+                     style={{
+                       backgroundImage: "linear-gradient(to right, #10b981, #8b5cf6)",
+                       width: "70px",
+                       height: "70px",
+                       display: "flex",
+                       alignItems: "center",
+                       justifyContent: "center"
+                     }}>
+                  <i className="bi bi-lightbulb text-white fs-3"></i>
+                </div>
+                <h3 className="fw-semibold mb-2">Innovation</h3>
+                <p className="text-gray-400">
+                  We continuously explore new technologies and ideas to improve your shopping experience 
+                  and stay ahead of market trends.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Team Section */}
+          <div className="row mb-5">
+            <div className="col-lg-12 text-center mb-4">
+              <h2 className="fs-1 fw-light">Meet Our Leadership</h2>
+              <p className="text-gray-400">The visionaries behind ShopEasy</p>
+            </div>
+            
+            <div className="col-lg-4 mb-4">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
+                <div className="team-image mb-3 mx-auto overflow-hidden rounded-circle" 
+                     style={{
+                       width: "120px",
+                       height: "120px",
+                       backgroundColor: "#2d2d2d",
+                       display: "flex",
+                       alignItems: "center",
+                       justifyContent: "center"
+                     }}>
+                  <i className="bi bi-person-fill text-white" style={{fontSize: "4rem"}}></i>
+                </div>
+                <h3 className="fw-semibold mb-1">Jamie Chen</h3>
+                <p className="text-emerald-400 mb-2">Founder & CEO</p>
+                <p className="text-gray-400">
+                  With over 15 years in retail technology, Jamie leads our company's vision and strategy.
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-lg-4 mb-4">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
+                <div className="team-image mb-3 mx-auto overflow-hidden rounded-circle" 
+                     style={{
+                       width: "120px",
+                       height: "120px",
+                       backgroundColor: "#2d2d2d",
+                       display: "flex",
+                       alignItems: "center",
+                       justifyContent: "center"
+                     }}>
+                  <i className="bi bi-person-fill text-white" style={{fontSize: "4rem"}}></i>
+                </div>
+                <h3 className="fw-semibold mb-1">Sophia Rodriguez</h3>
+                <p className="text-blue-400 mb-2">CTO</p>
+                <p className="text-gray-400">
+                  Sophia oversees our technology and engineering teams, ensuring a seamless shopping experience.
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-lg-4 mb-4">
+              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
+                <div className="team-image mb-3 mx-auto overflow-hidden rounded-circle" 
+                     style={{
+                       width: "120px",
+                       height: "120px",
+                       backgroundColor: "#2d2d2d",
+                       display: "flex",
+                       alignItems: "center",
+                       justifyContent: "center"
+                     }}>
+                  <i className="bi bi-person-fill text-white" style={{fontSize: "4rem"}}></i>
+                </div>
+                <h3 className="fw-semibold mb-1">Marcus Johnson</h3>
+                <p className="text-purple-400 mb-2">COO</p>
+                <p className="text-gray-400">
+                  Marcus leads our operations teams, optimizing logistics and fulfillment processes.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Stats Section */}
+          <div className="row mb-5">
+            <div className="col-lg-12">
+              <div className="p-5 bg-dark rounded-lg shadow-lg" 
+                   style={{
+                     backgroundImage: "linear-gradient(to right, rgba(26,26,26,0.9), rgba(26,26,26,0.95)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')",
+                     backgroundSize: "cover",
+                     backgroundPosition: "center",
+                     backgroundColor: "#1a1a1a"
+                   }}>
+                <div className="row text-center">
+                  <div className="col-md-3 mb-4 mb-md-0">
+                    <h2 className="display-4 fw-bold text-gradient"
+                        style={{
+                          backgroundImage: "linear-gradient(45deg, #8b5cf6, #3b82f6)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent"
+                        }}>10+</h2>
+                    <p className="text-gray-400">Years in Business</p>
                   </div>
-                  <p className="text-light-emphasis fs-5">
-                    We're building a future where online shopping feels as personal as your favorite local store — powered by technology, driven by values.
-                  </p>
+                  
+                  <div className="col-md-3 mb-4 mb-md-0">
+                    <h2 className="display-4 fw-bold text-gradient"
+                        style={{
+                          backgroundImage: "linear-gradient(45deg, #3b82f6, #10b981)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent"
+                        }}>5M+</h2>
+                    <p className="text-gray-400">Happy Customers</p>
+                  </div>
+                  
+                  <div className="col-md-3 mb-4 mb-md-0">
+                    <h2 className="display-4 fw-bold text-gradient"
+                        style={{
+                          backgroundImage: "linear-gradient(45deg, #10b981, #8b5cf6)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent"
+                        }}>50K+</h2>
+                    <p className="text-gray-400">Products</p>
+                  </div>
+                  
+                  <div className="col-md-3">
+                    <h2 className="display-4 fw-bold text-gradient"
+                        style={{
+                          backgroundImage: "linear-gradient(45deg, #8b5cf6, #3b82f6)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent"
+                        }}>30+</h2>
+                    <p className="text-gray-400">Countries Served</p>
+                  </div>
                 </div>
               </div>
-
-              {/* Our Story */}
-              <div className="card bg-dark border-danger border-start border-4 shadow-lg mb-5 hover-card">
-                <div className="card-body p-5">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="icon-box bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3">
-                      <i className="bi bi-journal-text fs-4"></i>
-                    </div>
-                    <h2 className="card-title text-danger m-0">Our Story</h2>
-                  </div>
-                  <p className="text-light-emphasis fs-5">
-                    What started as a small online project for our resume has evolved into a thriving e-commerce platform dedicated to exceptional customer experiences. From our humble beginnings, we've grown by listening to our customers and constantly improving our offerings.
-                  </p>
-                </div>
-              </div>
-
-              
-
-              {/* Footer with enhanced styling */}
-              <div className="about-footer mt-5 pt-4 border-top border-secondary text-center">
-                <p className="text-secondary">Updated on April 8, 2025</p>
-                <p className="text-secondary small">© 2025 Your E-Commerce Store. All Rights Reserved.</p>
+            </div>
+          </div>
+          
+          {/* Call to Action */}
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="p-5 bg-dark rounded-lg shadow-lg" style={{backgroundColor: "#1a1a1a"}}>
+                <h2 className="fs-1 fw-light mb-3">Join the ShopEasy Family</h2>
+                <p className="text-gray-400 mb-4 mx-auto" style={{maxWidth: "700px"}}>
+                  Experience the difference that our commitment to quality, convenience, and customer 
+                  satisfaction can make in your shopping journey.
+                </p>
+                <a href="/contact" className="btn btn-lg px-5 py-3 text-white fw-semibold"
+                   style={{
+                     backgroundImage: "linear-gradient(to right, #8b5cf6, #3b82f6, #10b981)",
+                     transition: "transform 0.3s ease-in-out",
+                     border: "none"
+                   }}
+                   onMouseOver={(e) => e.currentTarget.style.transform = "translateY(-3px)"}
+                   onMouseOut={(e) => e.currentTarget.style.transform = "translateY(0)"}
+                >
+                  Contact Us Today
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Custom CSS with enhanced dark theme styling */}
-      <style jsx global>{`
-        @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css');
-
-        .about-page-container {
-          min-height: 100vh;
-          
-          background-attachment: fixed;
-          background-size: cover;
+      
+      {/* CSS Styles */}
+      <style jsx>{`
+        .bg-black {
+          background-color: #121212;
         }
-
-        .header-underline {
-          height: 4px;
-          width: 80px;
-          border-radius: 2px;
+        
+        .bg-dark {
+          background-color: #1a1a1a !important;
         }
-
-        .text-light-emphasis {
-          color: #d1d1d1 !important;
+        
+        .text-gray-400 {
+          color: #9ca3af;
         }
-
-        .hover-card {
-          transition: all 0.4s ease;
-          background: linear-gradient(145deg, #1a1a1a, #222);
+        
+        .text-blue-400 {
+          color: #60a5fa;
         }
-
-        .hover-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 20px 40px rgba(220, 53, 69, 0.2) !important;
+        
+        .text-purple-400 {
+          color: #c084fc;
         }
-
-        .icon-box {
-          width: 56px;
-          height: 56px;
-          flex-shrink: 0;
+        
+        .text-emerald-400 {
+          color: #34d399;
         }
-
-        .glow-effect {
-          box-shadow: 0 0 25px rgba(220, 53, 69, 0.3);
+        
+        .text-emerald-500 {
+          color: #10b981;
         }
-
-        .bg-gradient-overlay {
-          background: radial-gradient(circle at top right, rgba(220, 53, 69, 0.1), transparent 70%);
-          opacity: 0.6;
-          z-index: 0;
+        
+        .value-icon:hover, .feature-icon:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease;
         }
-
-        .pulse-btn {
-          position: relative;
-          overflow: hidden;
-          z-index: 1;
+        
+        .team-image {
           transition: all 0.3s ease;
         }
-
-        .pulse-btn:hover {
-          background-color: #c82333;
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
-        }
-
-        .pulse-btn:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(255, 255, 255, 0.1);
-          border-radius: 50%;
-          transform: scale(0);
-          transition: transform 0.5s;
-          z-index: -1;
-        }
-
-        .pulse-btn:hover:before {
-          transform: scale(2);
-        }
-
-        /* Enhanced scrollbar for dark theme */
-        ::-webkit-scrollbar {
-          width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-          background: #0a0a0a;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          background: #dc3545;
-          border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-          background: #c82333;
+        
+        .team-image:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
         }
       `}</style>
-
-      {/* Bootstrap Icons CDN */}
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     </Layout>
   );
 };
