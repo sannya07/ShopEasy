@@ -30,15 +30,10 @@ const About = () => {
               <div className="p-4 bg-dark rounded-lg shadow-lg h-100" style={{backgroundColor: "#1a1a1a"}}>
                 <h2 className="mb-4 fs-2 fw-light">Our Journey</h2>
                 <p className="text-gray-400">
-                  Founded in 2015, ShopEasy began with a simple idea: shopping should be easy. 
-                  What started as a small online store operating out of a garage has grown into 
-                  a global retail platform serving millions of customers worldwide.
+                ShopEasy began as a passionate 6th semester project with the vision of creating a smooth, user-friendly online shopping experience. Built using the powerful MERN stack (MongoDB, Express.js, React, and Node.js), ShopEasy combines performance, responsiveness, and modern design to deliver a seamless e-commerce platform.
                 </p>
                 <p className="text-gray-400">
-                  Our founder, Jamie Chen, experienced firsthand the frustrations of complicated 
-                  shopping experiences and inconsistent customer service. This inspired the creation 
-                  of ShopEasy - a platform where quality, convenience, and customer satisfaction 
-                  would never be compromised.
+                From product browsing and cart management to secure checkout, every feature is crafted to reflect real-world retail functionality while maintaining clean code architecture and scalability.
                 </p>
                 <p className="text-gray-400">
                   Today, we offer thousands of products across dozens of categories, but our 
@@ -198,131 +193,7 @@ const About = () => {
             </div>
           </div>
           
-          {/* Team Section */}
-          <div className="row mb-5">
-            <div className="col-lg-12 text-center mb-4">
-              <h2 className="fs-1 fw-light">Meet Our Leadership</h2>
-              <p className="text-gray-400">The visionaries behind ShopEasy</p>
-            </div>
-            
-            <div className="col-lg-4 mb-4">
-              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
-                <div className="team-image mb-3 mx-auto overflow-hidden rounded-circle" 
-                     style={{
-                       width: "120px",
-                       height: "120px",
-                       backgroundColor: "#2d2d2d",
-                       display: "flex",
-                       alignItems: "center",
-                       justifyContent: "center"
-                     }}>
-                  <i className="bi bi-person-fill text-white" style={{fontSize: "4rem"}}></i>
-                </div>
-                <h3 className="fw-semibold mb-1">Jamie Chen</h3>
-                <p className="text-emerald-400 mb-2">Founder & CEO</p>
-                <p className="text-gray-400">
-                  With over 15 years in retail technology, Jamie leads our company's vision and strategy.
-                </p>
-              </div>
-            </div>
-            
-            <div className="col-lg-4 mb-4">
-              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
-                <div className="team-image mb-3 mx-auto overflow-hidden rounded-circle" 
-                     style={{
-                       width: "120px",
-                       height: "120px",
-                       backgroundColor: "#2d2d2d",
-                       display: "flex",
-                       alignItems: "center",
-                       justifyContent: "center"
-                     }}>
-                  <i className="bi bi-person-fill text-white" style={{fontSize: "4rem"}}></i>
-                </div>
-                <h3 className="fw-semibold mb-1">Sophia Rodriguez</h3>
-                <p className="text-blue-400 mb-2">CTO</p>
-                <p className="text-gray-400">
-                  Sophia oversees our technology and engineering teams, ensuring a seamless shopping experience.
-                </p>
-              </div>
-            </div>
-            
-            <div className="col-lg-4 mb-4">
-              <div className="p-4 bg-dark rounded-lg shadow-lg h-100 text-center" style={{backgroundColor: "#1a1a1a"}}>
-                <div className="team-image mb-3 mx-auto overflow-hidden rounded-circle" 
-                     style={{
-                       width: "120px",
-                       height: "120px",
-                       backgroundColor: "#2d2d2d",
-                       display: "flex",
-                       alignItems: "center",
-                       justifyContent: "center"
-                     }}>
-                  <i className="bi bi-person-fill text-white" style={{fontSize: "4rem"}}></i>
-                </div>
-                <h3 className="fw-semibold mb-1">Marcus Johnson</h3>
-                <p className="text-purple-400 mb-2">COO</p>
-                <p className="text-gray-400">
-                  Marcus leads our operations teams, optimizing logistics and fulfillment processes.
-                </p>
-              </div>
-            </div>
-          </div>
           
-          {/* Stats Section */}
-          <div className="row mb-5">
-            <div className="col-lg-12">
-              <div className="p-5 bg-dark rounded-lg shadow-lg" 
-                   style={{
-                     backgroundImage: "linear-gradient(to right, rgba(26,26,26,0.9), rgba(26,26,26,0.95)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')",
-                     backgroundSize: "cover",
-                     backgroundPosition: "center",
-                     backgroundColor: "#1a1a1a"
-                   }}>
-                <div className="row text-center">
-                  <div className="col-md-3 mb-4 mb-md-0">
-                    <h2 className="display-4 fw-bold text-gradient"
-                        style={{
-                          backgroundImage: "linear-gradient(45deg, #8b5cf6, #3b82f6)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent"
-                        }}>10+</h2>
-                    <p className="text-gray-400">Years in Business</p>
-                  </div>
-                  
-                  <div className="col-md-3 mb-4 mb-md-0">
-                    <h2 className="display-4 fw-bold text-gradient"
-                        style={{
-                          backgroundImage: "linear-gradient(45deg, #3b82f6, #10b981)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent"
-                        }}>5M+</h2>
-                    <p className="text-gray-400">Happy Customers</p>
-                  </div>
-                  
-                  <div className="col-md-3 mb-4 mb-md-0">
-                    <h2 className="display-4 fw-bold text-gradient"
-                        style={{
-                          backgroundImage: "linear-gradient(45deg, #10b981, #8b5cf6)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent"
-                        }}>50K+</h2>
-                    <p className="text-gray-400">Products</p>
-                  </div>
-                  
-                  <div className="col-md-3">
-                    <h2 className="display-4 fw-bold text-gradient"
-                        style={{
-                          backgroundImage: "linear-gradient(45deg, #8b5cf6, #3b82f6)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent"
-                        }}>30+</h2>
-                    <p className="text-gray-400">Countries Served</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           
           {/* Call to Action */}
           <div className="row">
