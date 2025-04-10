@@ -9,6 +9,7 @@ import Policy from './pages/Policy'
 import PageNotFound from './pages/PageNotFound'
 import Register from './pages/Auth/Register'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
