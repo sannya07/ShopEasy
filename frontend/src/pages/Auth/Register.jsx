@@ -108,7 +108,7 @@ const Register = () => {
                           type="text"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          className="form-control form-control-lg bg-dark text-light border-secondary"
+                          className="form-control form-control-lg bg-dark text-white border-secondary white-placeholder"
                           id="inputName"
                           placeholder="Enter your full name"
                           required
@@ -117,12 +117,12 @@ const Register = () => {
                       </div>
 
                       <div className="mb-4">
-                        <label htmlFor="inputEmail" className="form-label text-secondary small text-uppercase">Email address</label>
+                        <label htmlFor="inputEmail" className="form-label text-secondary small text-uppercase white-placeholder">Email address</label>
                         <input
                           type="email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          className="form-control form-control-lg bg-dark text-light border-secondary"
+                          className="form-control form-control-lg bg-dark text-light border-secondary white-placeholder"
                           id="inputEmail"
                           placeholder="Enter your email address"
                           required
@@ -131,12 +131,12 @@ const Register = () => {
                       </div>
 
                       <div className="mb-4">
-                        <label htmlFor="inputPassword" className="form-label text-secondary small text-uppercase">Password</label>
+                        <label htmlFor="inputPassword" className="form-label text-secondary small text-uppercase white-placeholder">Password</label>
                         <input
                           type="password"
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
-                          className="form-control form-control-lg bg-dark text-light border-secondary"
+                          className="form-control form-control-lg bg-dark text-light border-secondary white-placeholder"
                           id="inputPassword"
                           placeholder="Create a strong password"
                           required
@@ -146,12 +146,12 @@ const Register = () => {
 
                       <div className="row">
                         <div className="col-md-6 mb-4">
-                          <label htmlFor="inputPhone" className="form-label text-secondary small text-uppercase">Phone</label>
+                          <label htmlFor="inputPhone" className="form-label text-secondary small text-uppercase white-placeholder">Phone</label>
                           <input
                             type="text"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                            className="form-control form-control-lg bg-dark text-light border-secondary"
+                            className="form-control form-control-lg bg-dark text-light border-secondary white-placeholder"
                             id="inputPhone"
                             placeholder="Phone number"
                             required
@@ -160,12 +160,12 @@ const Register = () => {
                         </div>
                         
                         <div className="col-md-6 mb-4">
-                          <label htmlFor="inputAddress" className="form-label text-secondary small text-uppercase">Address</label>
+                          <label htmlFor="inputAddress" className="form-label text-secondary small text-uppercase white-placeholder">Address</label>
                           <input
                             type="text"
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
-                            className="form-control form-control-lg bg-dark text-light border-secondary"
+                            className="form-control form-control-lg bg-dark text-light border-secondary white-placeholder"
                             id="inputAddress"
                             placeholder="Your address"
                             required

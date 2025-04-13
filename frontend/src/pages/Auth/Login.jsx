@@ -105,7 +105,7 @@ const Login = () => {
                         <label htmlFor="inputEmail" className="form-label text-secondary small text-uppercase">Email address</label>
                         <input
                           type="email"
-                          className="form-control form-control-lg bg-dark text-light border-secondary"
+                          className="form-control form-control-lg bg-dark text-light border-secondary white-placeholder"
                           id="inputEmail"
                           placeholder="Enter your email address"
                           required
@@ -119,7 +119,7 @@ const Login = () => {
                         <label htmlFor="inputPassword" className="form-label text-secondary small text-uppercase">Password</label>
                         <input
                           type="password"
-                          className="form-control form-control-lg bg-dark text-light border-secondary"
+                          className="form-control form-control-lg bg-dark text-light border-secondary white-placeholder"
                           id="inputPassword"
                           placeholder="Enter your password"
                           required

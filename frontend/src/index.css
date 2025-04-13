@@ -26,3 +26,9 @@
   flex-direction: column;
   height: 70vh;
 }
+
+.white-placeholder::placeholder {
+  color: gray;
+  opacity: 0.8; /* optional: control visibility */
+}
+
