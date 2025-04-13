@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../../components/Layout/Layout';
-import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Register = () => {
@@ -183,7 +183,7 @@ const Register = () => {
                             required
                           />
                           <label className="form-check-label text-secondary" htmlFor="termsCheck">
-                            I agree to the <a href="#" style={{ color: '#00e676', textDecoration: 'none' }}>Terms of Service</a> and <a href="#" style={{ color: '#00e676', textDecoration: 'none' }}>Privacy Policy</a>
+                            I agree to the <Link to="/policy" style={{ color: '#00e676', textDecoration: 'none' }}>Terms of Service</Link> and <Link to="/policy" style={{ color: '#00e676', textDecoration: 'none' }}>Privacy Policy</Link>
                           </label>
                         </div>
                       </div>
