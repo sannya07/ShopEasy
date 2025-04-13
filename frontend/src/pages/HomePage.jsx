@@ -236,7 +236,8 @@ const HomePage = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.25, delay: 0.75, ease: "easeInOut" }}
               className="col-lg-6 mt-5 mt-lg-0 text-center">
-              <img src="/api/placeholder/600/400" alt="Shopping experience" className="img-fluid rounded-lg shadow-lg" />
+             <img src="ShoppingExperience.jpg" alt="Shopping experience" class="img-fluid rounded-3 shadow-lg"/>
+
             </motion.div>
           </div>
 
