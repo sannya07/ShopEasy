@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/auth';
 
 const Header = () => {
+  const [auth,setAuth]=useAuth();
+  const handleLogout=()=>{
+    setAuth({
+      ...auth,
+      user:null,
+      token:""
+    })
+    localStorage.removeItem('auth')
+  }
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black shadow-sm py-3 fixed-top">
       <div className="container-fluid">
@@ -32,12 +42,20 @@ const Header = () => {
             <li className="nav-item">
               <Link to="/category" className="nav-link nav-hover text-light">Category</Link>
             </li>
-            <li className="nav-item">
+            {
+              !auth.user? (<>
+              <li className="nav-item">
               <Link to="/register" className="nav-link nav-hover text-light">Register</Link>
             </li>
             <li className="nav-item">
               <Link to="/login" className="nav-link nav-hover text-light">Login</Link>
             </li>
+              </>):(<>
+                <li className="nav-item">
+                <Link onClick={handleLogout} to="/login" className="nav-link nav-hover text-light">LogOut</Link>
+                </li>
+              </>)
+            }
             <li className="nav-item">
               <Link to="/cart" className="nav-link nav-hover text-light">
                 <i className="bi bi-cart4 me-1"></i>Cart (0)

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout/Layout';
+import { useAuth } from '../context/auth';
 
 // Constants and utility functions for the background animation
 const GRID_BOX_SIZE = 32;
@@ -184,6 +185,7 @@ const HomePage = () => {
     }
   ];
 
+  const [auth, setAuth]=useAuth();
   return (
     <Layout title={'ShopEasy - Your One-Stop Online Shop'}>
       <div className=" -z-10 homepage-container relative overflow-hidden bg-black text-white min-h-screen py-5">
@@ -196,6 +198,7 @@ const HomePage = () => {
           {/* Hero Section */}
           <div className="row align-items-center mb-5 py-5">
             <div className="col-lg-6">
+              <pre>{JSON.stringify(auth,null,4)}</pre>
               <motion.h1 
                 initial={{ y: 25, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
